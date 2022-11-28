@@ -67,6 +67,9 @@ $ui-highlight-color: #A288BD;
 .status.light.attachment-list.compact .fa {
     color: darken($ui-highlight-color, 3%);
 }
+.autosuggest-textarea__suggestions__item>.account.small .display-name>span {
+    color: inherit;
+}
 
 .detailed-status__link .fa-star {
   font-size: 11px;
