@@ -58,13 +58,17 @@ $ui-highlight-color: #A288BD;
 .status.light .display-name {
     color: inherit;
 }
+.boost-modal .status__visibility-icon,
 .status.light .status__relative-time {
     color: darken($ui-highlight-color, 3%);
 }
 .status.light .attachment-list__list a {
     color: darken($ui-highlight-color, 3%);
 }
-.status.light.attachment-list.compact .fa {
+.status.light .attachment-list.compact .fa {
+    color: darken($ui-highlight-color, 3%);
+}
+.status.light .status__content a {
     color: darken($ui-highlight-color, 3%);
 }
 .autosuggest-textarea__suggestions__item>.account.small .display-name>span {
