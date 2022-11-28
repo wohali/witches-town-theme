@@ -1,22 +1,32 @@
 # Witches Town's theme
-A purple theme for [Mastodon](https://github.com/tootsuite/mastodon).
+A purple theme for [Mastodon](https://github.com/tootsuite/mastodon) (updated for version 4.0).
 
 It was originally created by [Alda](https://github.com/Aldarone) for [Witches Town](https://github.com/WitchesTown/) but is now used by various other instances.
 
 ![A screenshoot from Witches Town's main interface.](screenshoot.png)
+(mascot belongs to [Eldritch Café](https://eldritch.cafe) and is not part of this skin)
 
 ## Setup
 ### Instance admins
-1. Copy `witches-town.scss` into `app/javascript/styles/` and `witchesAwesome` into `public/`.
-2. Add the following line in `config/themes.yml`: `witches-town: styles/witches-town.scss`.
-3. Restart Mastodon.
+1. Copy `witches-town` folder into `app/javascript/skins/glitch/` and `witchesAwesome` into `public/`.
+2. Recompile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`.
+3. Grab a cup o tea, it may take a while.
+4. Restart Mastodon (e.g. `systemctl reload mastodon-web`).
 
 ### Users
 Once the theme have been installed on your instance.
 1. Go to the `Preferences` panel.
-2. Look for the `Site theme` dropdown menu.
-3. Select the `witches-town` theme from it.
-4. Save changes.
+2. Go to `Flavours > Glitch Edition`.
+3. Look for the `Skin` dropdown menu.
+4. Select the `Witches Town` skin from it.
+5. Save changes with `USE THIS` button.
+
+### Admins (optional)
+1. To force skin as your default instance skin go to the `Preferences` panel.
+2. Go to `Administration > Server Settings > Appearance`.
+3. Look for `Flavour and skin` dropdown menu.
+4. Select `witches-town` from it.
+5. Hit `SAVE CHANGES` button bellow.
 
 ## Licence
 Copyright (C) 2017-2018 Alda Marteau-Hardi & other contributors.
