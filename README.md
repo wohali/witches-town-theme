@@ -9,9 +9,10 @@ It was originally created by [Alda](https://github.com/Aldarone) for [Witches To
 ## Setup
 ### Instance admins
 1. Copy `witches-town` folder into `app/javascript/skins/glitch/` and `witchesAwesome` into `public/`.
-2. Recompile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`.
-3. Grab a cup o tea, it may take a while.
-4. Restart Mastodon (e.g. `systemctl reload mastodon-web`).
+2. Make sure server can read from these files by setting proper permissions / owners.
+3. Recompile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`.
+4. Grab a cup o tea, it may take a while.
+5. Restart Mastodon (e.g. `systemctl reload mastodon-web`).
 
 ### Users
 Once the theme have been installed on your instance.
