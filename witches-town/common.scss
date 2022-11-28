@@ -71,6 +71,22 @@ $ui-highlight-color: #A288BD;
     color: inherit;
 }
 
+//Reply preview box
+.reply-indicator__content a {
+    color: darken($ui-highlight-color, 3%);
+}
+.reply-indicator__content .attachment-list__list a {
+    color: darken($ui-highlight-color, 3%);
+}
+.reply-indicator__content .attachment-list.compact .fa {
+    color: darken($ui-highlight-color, 3%);
+}
+
+//Consistent colors of attachment list links
+.attachment-list.compact .fa, .attachment-list__list a, .reply-indicator__content a {
+    color: $ui-base-lighter-color;
+}
+
 .detailed-status__link .fa-star {
   font-size: 11px;
 }
