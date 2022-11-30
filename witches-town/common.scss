@@ -81,6 +81,9 @@ $ui-highlight-color: #A288BD;
 .status.light .status__content a {
     color: darken($ui-highlight-color, 3%);
 }
+.upload-progress {
+    color: darken($ui-highlight-color, 3%);
+}
 .autosuggest-textarea__suggestions__item>.account.small .display-name>span {
     color: inherit;
 }
