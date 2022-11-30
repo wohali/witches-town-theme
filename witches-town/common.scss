@@ -33,6 +33,11 @@ $ui-highlight-color: #A288BD;
   font-family: FontAwesome;
 }
 
+//Move notification area icons a bit down to avoid clipping
+.notification__favourite-icon-wrapper {
+    top: 10px;
+}
+
 //More readable (and smaller) font in glitch-soc settings window
 .glitch.local-settings span.hint {
     color: $ui-highlight-color;
