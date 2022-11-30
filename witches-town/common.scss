@@ -43,6 +43,11 @@ $ui-highlight-color: #A288BD;
 .icon-button.inverted {
     color: darken($ui-highlight-color, 3%);
 }
+//More clear on when the notiffication follow (bell icon) is active
+.account__header__tabs__buttons .icon-button.active {
+    color: #fff;
+    background-color: darken($ui-highlight-color, 3%);
+}
 .text-icon-button {
     color: darken($ui-highlight-color, 3%);
 }
