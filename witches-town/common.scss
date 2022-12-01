@@ -115,6 +115,11 @@ $ui-highlight-color: #A288BD;
     color: $ui-highlight-color;
     border-color: $ui-highlight-color;
 }
+//Poll / main textarea separatora
+.compose-form__poll-wrapper,
+.compose-form__poll-wrapper .poll__footer {
+    border-top: 1px solid #DBD3FF;
+}
 
 
 //Reply preview box
