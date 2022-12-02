@@ -97,31 +97,6 @@ $ui-highlight-color: #A288BD;
     color: $ui-highlight-color;
 }
 
-//Pools, darker input fields
-.poll__option input[type=text] {
-    border: 1px solid darken($ui-highlight-color, 3%);
-}
-.poll__input {
-    border: 1px solid darken($ui-highlight-color, 3%);
-}
-//Pool cancel option is visible enough so let's not make it distracting (commented out)
-//.poll__cancel .icon-button {
-//    color: $ui-highlight-color;
-//}
-.compose-form__poll-wrapper select {
-    border: 1px solid darken($ui-highlight-color, 3%);
-}
-.compose-form__poll-wrapper .button.button-secondary {
-    color: $ui-highlight-color;
-    border-color: $ui-highlight-color;
-}
-//Poll / main textarea separatora
-.compose-form__poll-wrapper,
-.compose-form__poll-wrapper .poll__footer {
-    border-top: 1px solid #DBD3FF;
-}
-
-
 //Reply preview box
 .reply-indicator .attachment-list.compact .fa, .reply-indicator .attachment-list__list a, .reply-indicator__content a {
     color: darken($ui-highlight-color, 3%);
