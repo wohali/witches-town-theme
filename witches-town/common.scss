@@ -1,14 +1,34 @@
 // Colors
-$ui-base-color: #383144;
-$ui-base-lighter-color: #D5BDD6;
-$ui-primary-color: #E6E6FA;
-$ui-secondary-color: #DBD3FF;
-$ui-highlight-color: #A288BD;
+
+@use '@/flavours/glitch/styles/variables' as * with (
+  $ui-base-color: #383144,
+  $ui-base-lighter-color: #D5BDD6,
+  $ui-primary-color: #E6E6FA,
+  $ui-secondary-color: #DBD3FF,
+  $ui-highlight-color: #A288BD,
+);
 
 @use '@/flavours/glitch/styles/application';
 @use 'sass:color';
 @use 'sass:meta';
 @use 'sass:string';
+
+:root {
+  --rich-text-container-color: #473A5E !important;
+  --rich-text-text-color: #E6E6FA !important;
+  --rich-text-decorations-color:  #E6E6FA !important;
+}
+
+blockquote {
+  border-inline-start: 3px solid var(--rich-text-decorations-color);
+
+  &::before {
+    content: "";
+    width: 0px;
+    -webkit-mask-image: unset !important;
+    mask-image: unset !important;
+  }
+}
 
 // Columns width
 .column {
