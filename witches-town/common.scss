@@ -24,7 +24,7 @@ blockquote {
 
   &::before {
     content: "";
-    width: 0px;
+    width: 0px !important;
     -webkit-mask-image: unset !important;
     mask-image: unset !important;
   }
